@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم بيتي - Bayti Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1 class="logo-title" data-ar="بيتي" data-en="Bayti">بيتي</h1>
+                        <p class="logo-subtitle" data-ar="طعم البيت، خارج البيت" data-en="Home taste, away from home">طعم البيت، خارج البيت</p>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Navigation -->
+                <nav class="nav" id="nav">
+                    <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                    <a href="#about" data-ar="عن بيتي" data-en="About Bayti">عن بيتي</a>
+                    <a href="#menu" data-ar="قائمتنا" data-en="Our Menu">قائمتنا</a>
+                    <a href="#testimonials" data-ar="آراء العملاء" data-en="Reviews">آراء العملاء</a>
+                    <a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
+                </nav>
+
+                <!-- Language Toggle & CTA -->
+                <div class="header-actions">
+                    <button class="lang-toggle" id="langToggle">
+                        <span class="lang-ar">EN</span>
+                        <span class="lang-en">عر</span>
+                    </button>
+                    <button class="cta-btn" data-ar="احجز طاولتك" data-en="Book Table">احجز طاولتك</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="main-title" data-ar="بيتي" data-en="Bayti">بيتي</span>
+                        <span class="sub-title" data-ar="طعم البيت في كل لقمة" data-en="Home taste in every bite">طعم البيت في كل لقمة</span>
+                    </h1>
+                    <p class="hero-description" data-ar="اكتشف أطباقًا مُحضرة بعناية وحب، من مطبخنا إلى مائدتك. حيث يلتقي الطعم الأصيل باللمسة العصرية." data-en="Discover dishes prepared with care and love, from our kitchen to your table. Where authentic taste meets modern touch.">
+                        اكتشف أطباقًا مُحضرة بعناية وحب، من مطبخنا إلى مائدتك. حيث يلتقي الطعم الأصيل باللمسة العصرية.
+                    </p>
+                    
+                    <div class="hero-features">
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <span data-ar="أطباق طازجة" data-en="Fresh Dishes">أطباق طازجة</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span data-ar="أجواء دافئة" data-en="Warm Atmosphere">أجواء دافئة</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span data-ar="خدمة ممتازة" data-en="Excellent Service">خدمة ممتازة</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" data-ar="اكتشف قائمتنا" data-en="Discover Menu">اكتشف قائمتنا</button>
+                        <button class="btn btn-secondary" data-ar="احجز طاولتك الآن" data-en="Book Table Now">احجز طاولتك الآن</button>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1541754202-9eb0e8c13b6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmFiaWMlMjBmb29kJTIwcmVzdGF1cmFudCUyMGRpc2h8ZW58MXx8fHx8MTc1NzI3NTU0NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="أطباق مطعم بيتي الشهية">
+                    <div class="hero-decorations">
+                        <div class="decoration decoration-1">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="decoration decoration-2">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-images">
+                    <div class="image-grid">
+                        <div class="image-column">
+                            <img src="https://images.unsplash.com/photo-1746274394124-141a1d1c5af3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFkaXRpb25hbCUyMGFyYWJpYyUyMGtpdGNoZW4lMjBjb29raW5nfGVufDF8fHx8MTc1NzI3NTU0NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="مطبخ بيتي التقليدي">
+                            <img src="https://images.unsplash.com/photo-1745808977891-0c820f46f543?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMHZlZ2V0YWJsZXMlMjBtaWRkbGUlMjBlYXN0ZXJufGVufDF8fHx8MTc1NzI3NTU0NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="خضروات طازجة">
+                        </div>
+                        <div class="image-column">
+                            <img src="https://images.unsplash.com/photo-1712488070215-d22e012314ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmFiaWMlMjByZXN0YXVyYW50JTIwaW50ZXJpb3IlMjB3YXJtfGVufDF8fHx8MTc1NzI3NTU0NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="أجواء مطعم بيتي الدافئة">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2 data-ar="قصتنا" data-en="Our Story">قصتنا</h2>
+                        <div class="divider"></div>
+                        <h3 data-ar="حيث يبدأ الطعم الأصيل" data-en="Where authentic taste begins">حيث يبدأ الطعم الأصيل</h3>
+                    </div>
+
+                    <p class="about-description" data-ar="في "بيتي"، نؤمن بأن الطعام هو أكثر من مجرد وجبة. إنه شعور بالدفء والراحة والأصالة. نستخدم أجود المكونات المحلية لنقدم لكم أطباقًا تذكركم بمذاق طعام المنزل، ولكن بلمسة عصرية ومبتكرة تناسب ذوقكم المميز." data-en="At Bayti, we believe that food is more than just a meal. It's a feeling of warmth, comfort and authenticity. We use the finest local ingredients to offer you dishes that remind you of the taste of home food, but with a modern and innovative touch that suits your distinctive taste.">
+                        في "بيتي"، نؤمن بأن الطعام هو أكثر من مجرد وجبة. إنه شعور بالدفء والراحة والأصالة. 
+                        نستخدم أجود المكونات المحلية لنقدم لكم أطباقًا تذكركم بمذاق طعام المنزل، 
+                        ولكن بلمسة عصرية ومبتكرة تناسب ذوقكم المميز.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 data-ar="مكونات طازجة" data-en="Fresh Ingredients">مكونات طازجة</h4>
+                                <p data-ar="نختار أجود المكونات المحلية والطازجة يومياً" data-en="We select the finest local and fresh ingredients daily">نختار أجود المكونات المحلية والطازجة يومياً</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 data-ar="أجواء عائلية" data-en="Family Atmosphere">أجواء عائلية</h4>
+                                <p data-ar="نوفر أجواء دافئة ومريحة لجميع أفراد العائلة" data-en="We provide warm and comfortable atmosphere for all family members">نوفر أجواء دافئة ومريحة لجميع أفراد العائلة</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 data-ar="وصفات أصيلة" data-en="Authentic Recipes">وصفات أصيلة</h4>
+                                <p data-ar="وصفات تراثية محضرة بأيدي خبيرة ومتمرسة" data-en="Traditional recipes prepared by expert and experienced hands">وصفات تراثية محضرة بأيدي خبيرة ومتمرسة</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 data-ar="خدمة سريعة" data-en="Fast Service">خدمة سريعة</h4>
+                                <p data-ar="نضمن لكم خدمة سريعة وممتازة في جميع الأوقات" data-en="We guarantee fast and excellent service at all times">نضمن لكم خدمة سريعة وممتازة في جميع الأوقات</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 data-ar="تذوق قائمة بيتي الفريدة" data-en="Taste Bayti's Unique Menu">تذوق قائمة بيتي الفريدة</h2>
+                <div class="divider"></div>
+                <p data-ar="اكتشف مجموعة منتقاة من أشهى الأطباق التراثية المحضرة بعناية وحب" data-en="Discover a curated collection of the most delicious traditional dishes prepared with care and love">اكتشف مجموعة منتقاة من أشهى الأطباق التراثية المحضرة بعناية وحب</p>
+            </div>
+
+            <!-- Main Dishes -->
+            <div class="menu-category">
+                <h3 class="category-title" data-ar="الأطباق الرئيسية" data-en="Main Dishes">الأطباق الرئيسية</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1581184953963-d15972933db1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaWRkbGUlMjBlYXN0ZXJuJTIwY3Vpc2luZSUyMGxhbWIlMjByaWNlfGVufDF8fHx8MTc1NzI3NTU0NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="منسف على طريقة بيتي">
+                            <span class="featured-badge" data-ar="طبق مميز" data-en="Featured">طبق مميز</span>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 data-ar="منسف على طريقة بيتي" data-en="Mansaf Bayti Style">منسف على طريقة بيتي</h4>
+                                <span class="price" data-ar="45 ريال" data-en="45 SAR">45 ريال</span>
+                            </div>
+                            <p data-ar="لحم ضأن بلدي مطبوخ في جميد كركي صافي، مع أرز بسمتي وزين بالجوز والبقدونس" data-en="Local lamb cooked in pure Jameed, with basmati rice and garnished with nuts and parsley">لحم ضأن بلدي مطبوخ في جميد كركي صافي، مع أرز بسمتي وزين بالجوز والبقدونس</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1541754202-9eb0e8c13b6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmFiaWMlMjBmb29kJTIwcmVzdGF1cmFudCUyMGRpc2h8ZW58MXx8fHx8MTc1NzI3NTU0NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="كبة لبنية بيتي">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 data-ar="كبة لبنية بيتي" data-en="Bayti Kibbeh with Yogurt">كبة لبنية بيتي</h4>
+                                <span class="price" data-ar="35 ريال" data-en="35 SAR">35 ريال</span>
+                            </div>
+                            <p data-ar="كبة محشوة باللحم والجوز، مطبوخة في اللبن مع الأرز الأبيض" data-en="Kibbeh stuffed with meat and nuts, cooked in yogurt with white rice">كبة محشوة باللحم والجوز، مطبوخة في اللبن مع الأرز الأبيض</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1581184953963-d15972933db1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaWRkbGUlMjBlYXN0ZXJuJTIwY3Vpc2luZSUyMGxhbWIlMjByaWNlfGVufDF8fHx8MTc1NzI3NTU0NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="أوزي ملكي">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 data-ar="أوزي ملكي" data-en="Royal Ouzi">أوزي ملكي</h4>
+                                <span class="price" data-ar="42 ريال" data-en="42 SAR">42 ريال</span>
+                            </div>
+                            <p data-ar="أرز بخاري بالزعفران مع لحم الخروف المتبل والجزر واللوز المحمص" data-en="Bukhari rice with saffron, spiced lamb, carrots and toasted almonds">أرز بخاري بالزعفران مع لحم الخروف المتبل والجزر واللوز المحمص</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Appetizers -->
+            <div class="menu-category">
+                <h3 class="category-title" data-ar="المقبلات" data-en="Appetizers">المقبلات</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1541754202-9eb0e8c13b6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmFiaWMlMjBmb29kJTIwcmVzdGF1cmFudCUyMGRpc2h8ZW58MXx8fHx8MTc1NzI3NTU0NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="حمص بيتي الخاص">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 data-ar="حمص بيتي الخاص" data-en="Bayti Special Hummus">حمص بيتي الخاص</h4>
+                                <span class="price" data-ar="18 ريال" data-en="18 SAR">18 ريال</span>
+                            </div>
+                            <p data-ar="حمص كريمي مع زيت الزيتون البكر والطحينة، يقدم مع الخبز الطازج" data-en="Creamy hummus with extra virgin olive oil and tahini, served with fresh bread">حمص كريمي مع زيت الزيتون البكر والطحينة، يقدم مع الخبز الطازج</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1541754202-9eb0e8c13b6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmFiaWMlMjBmb29kJTIwcmVzdGF1cmFudCUyMGRpc2h8ZW58MXx8fHx8MTc1NzI3NTU0NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="متبل بالباذنجان المشوي">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 data-ar="متبل بالباذنجان المشوي" data-en="Grilled Eggplant Mutabbal">متبل بالباذنجان المشوي</h4>
+                                <span class="price" data-ar="16 ريال" data-en="16 SAR">16 ريال</span>
+                            </div>
+                            <p data-ar="باذنجان مشوي على الفحم مع الطحينة والثوم وزيت الزيتون" data-en="Charcoal grilled eggplant with tahini, garlic and olive oil">باذنجان مشوي على الفحم مع الطحينة والثوم وزيت الزيتون</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-category">
+                <h3 class="category-title" data-ar="الحلويات" data-en="Desserts">الحلويات</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1541754202-9eb0e8c13b6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmFiaWMlMjBmb29kJTIwcmVzdGF1cmFudCUyMGRpc2h8ZW58MXx8fHx8MTc1NzI3NTU0NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="كنافة نابلسية">
+                            <span class="featured-badge" data-ar="طبق مميز" data-en="Featured">طبق مميز</span>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 data-ar="كنافة نابلسية" data-en="Nabulsi Kunafa">كنافة نابلسية</h4>
+                                <span class="price" data-ar="25 ريال" data-en="25 SAR">25 ريال</span>
+                            </div>
+                            <p data-ar="كنافة طازجة بالجبنة العكاوي والقطر المعطر بماء الزهر" data-en="Fresh kunafa with Akkawi cheese and orange blossom syrup">كنافة طازجة بالجبنة العكاوي والقطر المعطر بماء الزهر</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1541754202-9eb0e8c13b6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmFiaWMlMjBmb29kJTIwcmVzdGF1cmFudCUyMGRpc2h8ZW58MXx8fHx8MTc1NzI3NTU0NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="معمول بالتمر">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 data-ar="معمول بالتمر" data-en="Date Maamoul">معمول بالتمر</h4>
+                                <span class="price" data-ar="20 ريال" data-en="20 SAR">20 ريال</span>
+                            </div>
+                            <p data-ar="معمول محشو بالتمر الطبيعي ومزين بالسمسم" data-en="Maamoul stuffed with natural dates and decorated with sesame">معمول محشو بالتمر الطبيعي ومزين بالسمسم</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cta">
+                <p data-ar="هل تريد رؤية القائمة الكاملة؟" data-en="Want to see the full menu?">هل تريد رؤية القائمة الكاملة؟</p>
+                <button class="btn btn-primary" data-ar="تحميل القائمة كاملة" data-en="Download Full Menu">تحميل القائمة كاملة</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Bayti Section -->
+    <section class="why-bayti">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 data-ar="نعدكم بتجربة لا تُنسى" data-en="We Promise You an Unforgettable Experience">نعدكم بتجربة لا تُنسى</h2>
+                <div class="divider"></div>
+                <p data-ar="اكتشف ما يجعل "بيتي" مختلفاً عن غيره من المطاعم" data-en="Discover what makes Bayti different from other restaurants">اكتشف ما يجعل "بيتي" مختلفاً عن غيره من المطاعم</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 data-ar="مكونات طازجة" data-en="Fresh Ingredients">مكونات طازجة</h3>
+                    <p data-ar="نختار أجود المكونات الطازجة والمحلية يومياً لضمان أفضل مذاق وجودة عالية." data-en="We select the finest fresh and local ingredients daily to ensure the best taste and high quality.">نختار أجود المكونات الطازجة والمحلية يومياً لضمان أفضل مذاق وجودة عالية.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 data-ar="وصفات أصيلة" data-en="Authentic Recipes">وصفات أصيلة</h3>
+                    <p data-ar="وصفات تراثية أصيلة محضرة بأيدي خبيرة، تنقل لكم طعم الذكريات والتراث الأصيل." data-en="Authentic traditional recipes prepared by expert hands, bringing you the taste of memories and authentic heritage.">وصفات تراثية أصيلة محضرة بأيدي خبيرة، تنقل لكم طعم الذكريات والتراث الأصيل.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 data-ar="أجواء عائلية دافئة" data-en="Warm Family Atmosphere">أجواء عائلية دافئة</h3>
+                    <p data-ar="نوفر أجواء مريحة ودافئة تشعركم بالراحة والألفة كما لو كنتم في منزلكم." data-en="We provide comfortable and warm atmosphere that makes you feel relaxed and familiar as if you were in your home.">نوفر أجواء مريحة ودافئة تشعركم بالراحة والألفة كما لو كنتم في منزلكم.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3 data-ar="خدمة مميزة" data-en="Distinguished Service">خدمة مميزة</h3>
+                    <p data-ar="فريق خدمة مدرب ومتميز يحرص على راحتكم وتقديم أفضل تجربة ممكنة." data-en="Trained and distinguished service team that cares about your comfort and providing the best possible experience.">فريق خدمة مدرب ومتميز يحرص على راحتكم وتقديم أفضل تجربة ممكنة.</p>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h3 data-ar="هل تريد تجربة الفرق بنفسك؟" data-en="Want to experience the difference yourself?">هل تريد تجربة الفرق بنفسك؟</h3>
+                <p data-ar="احجز طاولتك الآن واستمتع بتجربة طعام لا تُنسى مع العائلة والأصدقاء" data-en="Book your table now and enjoy an unforgettable dining experience with family and friends">احجز طاولتك الآن واستمتع بتجربة طعام لا تُنسى مع العائلة والأصدقاء</p>
+                <button class="btn btn-gold" data-ar="احجز الآن" data-en="Book Now">احجز الآن</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 data-ar="ماذا يقولون عنّا؟" data-en="What Do They Say About Us?">ماذا يقولون عنّا؟</h2>
+                <div class="divider"></div>
+                <p data-ar="آراء عملائنا الكرام الذين جربوا تجربة "بيتي" الفريدة" data-en="Reviews from our valued customers who experienced Bayti's unique experience">آراء عملائنا الكرام الذين جربوا تجربة "بيتي" الفريدة</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text" data-ar="الطعام هنا يذكرني ببيت جدتي. كل شيء مُعد بعناية وحب. المنسف خاصة طعمه لا يُقاوم. أوصي به بشدة!" data-en="The food here reminds me of my grandmother's house. Everything is prepared with care and love. The Mansaf especially has an irresistible taste. I highly recommend it!">الطعام هنا يذكرني ببيت جدتي. كل شيء مُعد بعناية وحب. المنسف خاصة طعمه لا يُقاوم. أوصي به بشدة!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">أ.س</div>
+                        <div class="author-info">
+                            <h4 data-ar="أحمد السالم" data-en="Ahmed Al Salem">أحمد السالم</h4>
+                            <p data-ar="عميل دائم" data-en="Regular Customer">عميل دائم</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text" data-ar="مطعم رائع للعائلات! الأطفال يحبون الطعام والخدمة ممتازة. الأجواء دافئة ومريحة جداً. نأتي هنا باستمرار." data-en="Great restaurant for families! Children love the food and the service is excellent. The atmosphere is very warm and comfortable. We come here regularly.">مطعم رائع للعائلات! الأطفال يحبون الطعام والخدمة ممتازة. الأجواء دافئة ومريحة جداً. نأتي هنا باستمرار.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ف.ع</div>
+                        <div class="author-info">
+                            <h4 data-ar="فاطمة العلي" data-en="Fatima Al Ali">فاطمة العلي</h4>
+                            <p data-ar="أم لثلاثة أطفال" data-en="Mother of Three">أم لثلاثة أطفال</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text" data-ar="كشيف، أقدر الجودة العالية للطعام هنا. الوصفات أصيلة والمكونات طازجة. هذا هو المعنى الحقيقي للطبخ التراثي." data-en="As a chef, I appreciate the high quality of food here. The recipes are authentic and the ingredients are fresh. This is the true meaning of traditional cooking.">كشيف، أقدر الجودة العالية للطعام هنا. الوصفات أصيلة والمكونات طازجة. هذا هو المعنى الحقيقي للطبخ التراثي.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">خ.م</div>
+                        <div class="author-info">
+                            <h4 data-ar="خالد محم��" data-en="Khalid Mohammed">خالد محمد</h4>
+                            <p data-ar="شيف محترف" data-en="Professional Chef">شيف محترف</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overall-rating">
+                <div class="rating-display">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>4.9 <span data-ar="من" data-en="out of">من</span> 5</h3>
+                    <p data-ar="بناءً على أكثر من 500 تقييم" data-en="Based on more than 500 reviews">بناءً على أكثر من 500 تقييم</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="contact" class="reservation">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 data-ar="احجز طاولتك" data-en="Book Your Table">احجز طاولتك</h2>
+                <div class="divider"></div>
+                <p data-ar="احجز طاولتك لتجربة "بيتي" الآن واستمتع بوجبة لا تُنسى" data-en="Book your table for Bayti experience now and enjoy an unforgettable meal">احجز طاولتك لتجربة "بيتي" الآن واستمتع بوجبة لا تُنسى</p>
+            </div>
+
+            <div class="reservation-content">
+                <!-- Reservation Form -->
+                <div class="reservation-form-container">
+                    <div class="form-header">
+                        <h3 data-ar="احجز طاولتك الآن" data-en="Book Your Table Now">احجز طاولتك الآن</h3>
+                    </div>
+                    <form class="reservation-form" id="reservationForm">
+                        <div class="form-group">
+                            <label for="name" data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone" placeholder="05xxxxxxxx" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests" data-ar="عدد الأشخاص" data-en="Number of Guests">عدد الأشخاص</label>
+                            <select id="guests" name="guests" required>
+                                <option value="" data-ar="اختر عدد الأشخاص" data-en="Select number of guests">اختر عدد الأشخاص</option>
+                                <option value="1" data-ar="شخص واحد" data-en="1 Person">شخص واحد</option>
+                                <option value="2" data-ar="شخصان" data-en="2 People">شخصان</option>
+                                <option value="3" data-ar="3 أشخاص" data-en="3 People">3 أشخاص</option>
+                                <option value="4" data-ar="4 أشخاص" data-en="4 People">4 أشخاص</option>
+                                <option value="5" data-ar="5 أشخاص" data-en="5 People">5 أشخاص</option>
+                                <option value="6" data-ar="6 أشخاص" data-en="6 People">6 أشخاص</option>
+                                <option value="7+" data-ar="أكثر من 6 أشخاص" data-en="More than 6 people">أكثر من 6 أشخاص</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date" data-ar="التاريخ" data-en="Date">التاريخ</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="time" data-ar="الوقت" data-en="Time">الوقت</label>
+                                <select id="time" name="time" required>
+                                    <option value="" data-ar="اختر الوقت" data-en="Select time">اختر الوقت</option>
+                                    <option value="11:00">11:00 <span data-ar="صباحاً" data-en="AM">صباحاً</span></option>
+                                    <option value="12:00">12:00 <span data-ar="ظهراً" data-en="PM">ظهراً</span></option>
+                                    <option value="13:00">1:00 <span data-ar="ظهراً" data-en="PM">ظهراً</span></option>
+                                    <option value="14:00">2:00 <span data-ar="ظهراً" data-en="PM">ظهراً</span></option>
+                                    <option value="15:00">3:00 <span data-ar="عصراً" data-en="PM">عصراً</span></option>
+                                    <option value="16:00">4:00 <span data-ar="عصراً" data-en="PM">عصراً</span></option>
+                                    <option value="17:00">5:00 <span data-ar="مساءً" data-en="PM">مساءً</span></option>
+                                    <option value="18:00">6:00 <span data-ar="مساءً" data-en="PM">مساءً</span></option>
+                                    <option value="19:00">7:00 <span data-ar="مساءً" data-en="PM">مساءً</span></option>
+                                    <option value="20:00">8:00 <span data-ar="مساءً" data-en="PM">مساءً</span></option>
+                                    <option value="21:00">9:00 <span data-ar="مساءً" data-en="PM">مساءً</span></option>
+                                    <option value="22:00">10:00 <span data-ar="مساءً" data-en="PM">مساءً</span></option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" data-ar="أرسل طلب الحجز" data-en="Send Reservation Request">أرسل طلب الحجز</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3 data-ar="معلومات التواصل" data-en="Contact Information">معلومات التواصل</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 data-ar="العنوان" data-en="Address">العنوان</h4>
+                                <p data-ar="شارع الملك فهد، حي النخيل<br>الرياض، المملكة العربية السعودية" data-en="King Fahd Street, Al Nakheel District<br>Riyadh, Saudi Arabia">شارع الملك فهد، حي النخيل<br>الرياض، المملكة العربية السعودية</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 data-ar="الهاتف" data-en="Phone">الهاتف</h4>
+                                <p>+966 11 123 4567<br>+966 50 123 4567</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 data-ar="ساعات العمل" data-en="Working Hours">ساعات العمل</h4>
+                                <p data-ar="السبت - الخميس: 11:00 ص - 11:00 م<br>الجمعة: 2:00 م - 11:00 م" data-en="Saturday - Thursday: 11:00 AM - 11:00 PM<br>Friday: 2:00 PM - 11:00 PM">السبت - الخميس: 11:00 ص - 11:00 م<br>الجمعة: 2:00 م - 11:00 م</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="map-container">
+                        <h3 data-ar="موقعنا على الخريطة" data-en="Our Location on Map">موقعنا على الخريطة</h3>
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p data-ar="خريطة Google Maps" data-en="Google Maps">خريطة Google Maps</p>
+                            <small data-ar="شارع الملك فهد، حي النخيل، الرياض" data-en="King Fahd Street, Al Nakheel, Riyadh">شارع الملك فهد، حي النخيل، الرياض</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo and Description -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3 data-ar="بيتي" data-en="Bayti">بيتي</h3>
+                            <p data-ar="طعم البيت، خارج البيت" data-en="Home taste, away from home">طعم البيت، خارج البيت</p>
+                        </div>
+                    </div>
+                    <p class="footer-description" data-ar="في "بيتي"، نقدم لكم أشهى الأطباق التراثية المحضرة بعناية وحب، في أجواء دافئة ومريحة تشعركم بالمنزل." data-en="At Bayti, we offer you the most delicious traditional dishes prepared with care and love, in a warm and comfortable atmosphere that makes you feel at home.">
+                        في "بيتي"، نقدم لكم أشهى الأطباق التراثية المحضرة بعناية وحب، 
+                        في أجواء دافئة ومريحة تشعركم بالمنزل.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                        <li><a href="#about" data-ar="عن بيتي" data-en="About Bayti">عن بيتي</a></li>
+                        <li><a href="#menu" data-ar="قائمتنا" data-en="Our Menu">قائمتنا</a></li>
+                        <li><a href="#testimonials" data-ar="آراء العملاء" data-en="Reviews">آراء العملاء</a></li>
+                        <li><a href="#contact" data-ar="احجز طاولتك" data-en="Book Table">احجز طاولتك</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p data-ar="شارع الملك فهد، حي النخيل" data-en="King Fahd Street, Al Nakheel">شارع الملك فهد، حي النخيل</p>
+                                <p data-ar="الرياض، المملكة العربية السعودية" data-en="Riyadh, Saudi Arabia">الرياض، المملكة العربية السعودية</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p>+966 11 123 4567</p>
+                                <p>+966 50 123 4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@bayti-restaurant.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Working Hours -->
+                <div class="footer-section">
+                    <h4 data-ar="ساعات العمل" data-en="Working Hours">ساعات العمل</h4>
+                    <div class="working-hours">
+                        <div class="hours-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p><strong data-ar="السبت - الخميس" data-en="Saturday - Thursday">السبت - الخميس</strong></p>
+                                <p data-ar="11:00 صباحاً - 11:00 مساءً" data-en="11:00 AM - 11:00 PM">11:00 صباحاً - 11:00 مساءً</p>
+                                <p><strong data-ar="الجمعة" data-en="Friday">الجمعة</strong></p>
+                                <p data-ar="2:00 ظهراً - 11:00 مساءً" data-en="2:00 PM - 11:00 PM">2:00 ظهراً - 11:00 مساءً</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="special-note">
+                        <p><span>🍽️</span> <span data-ar="نتطلع لاستقبالكم في بيتي" data-en="We look forward to welcoming you at Bayti">نتطلع لاستقبالكم في بيتي</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p data-ar="© 2025 بيتي. جميع الحقوق محفوظة." data-en="© 2025 Bayti. All rights reserved.">© 2025 بيتي. جميع الحقوق محفوظة.</p>
+                    <div class="footer-links">
+                        <a href="#" data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</a>
+                        <a href="#" data-ar="الشروط والأحكام" data-en="Terms & Conditions">الشروط والأحكام</a>
+                        <a href="#" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
